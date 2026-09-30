@@ -6,6 +6,16 @@
 
 #include "totem.dtsi"
 
+/ {
+    chosen {
+        zmk,physical-layout = &totem_layout;
+    };
+};
+
+&totem_layout {
+    status = "okay";
+};
+
 &kscan0 {
     col-gpios
         = <&xiao_d 4 GPIO_ACTIVE_HIGH>
