@@ -317,6 +317,15 @@
 
             tapping-term-ms = <175>;
         };
+
+        Mouse: Mouse {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOUSE";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1>, <&tog 0>;
+
+            tapping-term-ms = <175>;
+        };
     };
 
     keymap {
@@ -387,7 +396,7 @@
        &sk LEFT_CONTROL  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP      &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &sk RIGHT_CONTROL
        &sk LEFT_SHIFT    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RIGHT_SHIFT
 &to 0  &mkp MB5          &mkp MB2        &mkp MB3        &mkp MB1         &mkp MB4          &mkp MB4        &mkp MB1        &mkp MB3        &mkp MB2         &mkp MB5           &to 0
-                                         &mkp MB3        &mkp MB3         &mkp MB1          &mkp MB1        &mkp MB3        &mkp MB2
+                                         &mkp MB3        &mkp MB3         &Mouse            &Mouse          &mkp MB3        &mkp MB2
             >;
         };
     };
