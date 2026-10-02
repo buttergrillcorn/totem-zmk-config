@@ -314,10 +314,10 @@
         Number {
             display-name = "NUM";
             bindings = <
-       &kp TAB       &trans        &trans     &trans          &trans    &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp GRAVE
-       &sk LEFT_GUI  &sk LEFT_ALT  &sk RCTRL  &sk LEFT_SHIFT  &trans    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp ENTER
-&to 0  &tog 4        &sl 3         &trans     &trans          &trans    &kp N0     &kp N1  &kp N2  &kp N3  &kp BSLH   &trans
-                                   &trans     &trans          &trans    &trans     &trans  &trans
+       &kp TAB       &trans        &trans     &trans          &trans    &mt EQUAL KP_PLUS               &mt AMPERSAND NUMBER_7    &mt ASTRK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &mt TILDE GRAVE
+       &sk LEFT_GUI  &sk LEFT_ALT  &sk RCTRL  &sk LEFT_SHIFT  &trans    &mt UNDERSCORE KP_MINUS         &mt DOLLAR NUMBER_4       &mt PERCENT N5      &mt CARET NUMBER_6             &kp INTERNATIONAL_3
+&to 0  &tog 4        &sl 3         &trans     &trans          &trans    &mt RIGHT_PARENTHESIS NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2     &mt HASH NUMBER_3              &mt PIPE BACKSLASH   &trans
+                                   &trans     &trans          &trans    &trans                          &trans                    &trans
             >;
         };
 
