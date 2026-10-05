@@ -259,28 +259,28 @@
 
         MouseL {
             bindings = <&to 6>;
-            key-positions = <12 11 10>;
+            key-positions = <12 11 13>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         MouseR {
             bindings = <&to 6>;
-            key-positions = <17 18 19>;
+            key-positions = <17 18 16>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         MouseL_E {
             bindings = <&to 0>;
-            key-positions = <11 12 10>;
+            key-positions = <11 12 13>;
             timeout-ms = <50>;
             layers = <6>;
         };
 
         MouseR_E {
             bindings = <&to 0>;
-            key-positions = <19 18 17>;
+            key-positions = <18 17 16>;
             timeout-ms = <50>;
             layers = <6>;
         };
