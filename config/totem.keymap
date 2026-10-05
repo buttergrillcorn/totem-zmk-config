@@ -356,10 +356,10 @@
         Base {
             display-name = "BASE";
             bindings = <
-              &kp Q  &kp W  &kp E                        &kp R                       &kp T        &kp Y                  &kp U            &kp I                &kp O                    &kp P
-              &kp A  &kp S  &kp D                        &kp F                       &kp G        &kp H                  &kp J            &kp K                &kp L                    &mt COLON SEMI
-&kp LEFT_GUI  &kp Z  &kp X  &kp C                        &kp V                       &kp B        &kp N                  &kp M            &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH  &mt DOUBLE_QUOTES SINGLE_QUOTE
-                            &Thumb_HT LEFT_SHIFT ESCAPE  &Thumb_HT LEFT_CONTROL TAB  &kp SPACE    &Thumb_LT 2 BACKSPACE  &Thumb_LT 1 DEL  &Thumb_LT 3 ENTER
+              &kp Q  &kp W  &kp E                        &kp R                       &kp T        &kp Y                  &kp U              &kp I                &kp O                    &kp P
+              &kp A  &kp S  &kp D                        &kp F                       &kp G        &kp H                  &kp J              &kp K                &kp L                    &mt COLON SEMI
+&kp LEFT_GUI  &kp Z  &kp X  &kp C                        &kp V                       &kp B        &kp N                  &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH  &mt DOUBLE_QUOTES SINGLE_QUOTE
+                            &Thumb_HT LEFT_SHIFT ESCAPE  &Thumb_HT LEFT_CONTROL TAB  &kp SPACE    &Thumb_LT 2 BACKSPACE  &Thumb_LT 1 ENTER  &Thumb_LT 3 DELETE
             >;
         };
 
