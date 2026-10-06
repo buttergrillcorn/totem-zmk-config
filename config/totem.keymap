@@ -105,20 +105,6 @@
             layers = <0>;
         };
 
-        L_shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <11 12>;
-            timeout-ms = <50>;
-            layers = <0 2 1 3>;
-        };
-
-        R_shift {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <18 17>;
-            timeout-ms = <50>;
-            layers = <0 2 1 3>;
-        };
-
         B1 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <31 0>;
