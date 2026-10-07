@@ -334,11 +334,11 @@
             #binding-cells = <0>;
             bindings = <&to 2>, <&none>, <&to 0>;
 
-            continue-list = <
-                NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 
-                NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0
-                KP_PLUS KP_MINUS KP_MULTIPLY KP_DIVIDE EQUAL
-                COMMA PERIOD SLASH COLON BACKSPACE DELETE
+            continue-list = <>;
+            ignored-key-positions = <
+                0  1  2  3  4     5  6  7  8  9
+                10 11 12 13 14    15 16 17 18 19
+                20 21 22 23 24    25 26 27 28 29 30 31
             >;
         };
 
