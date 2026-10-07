@@ -333,23 +333,24 @@
             label = "NUM_WORD";
             #binding-cells = <0>;
             bindings = <&to 2>, <&none>, <&to 0>;
+
             continue-list = <
                 NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 
                 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0
                 KP_PLUS KP_MINUS KP_MULTIPLY KP_DIVIDE EQUAL
                 COMMA PERIOD SLASH COLON BACKSPACE DELETE
             >;
-         };
+        };
 
-         num_lt: num_layer_tap {
-             compatible = "zmk,behavior-hold-tap";
-             label = "NUM_LT";
-             #binding-cells = <2>;
-             flavor = "balanced";
-             tapping-term-ms = <200>;
-             quick-tap-ms = <175>;
-             bindings = <&mo>, <&num_word>;
-         };
+        num_lt: num_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NUM_LT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&num_word>;
+        };
     };
 
     keymap {
@@ -358,10 +359,10 @@
         Base {
             display-name = "BASE";
             bindings = <
-          &kp Q           &kp W  &kp E                   &kp R             &kp T        &kp Y                  &kp U  &kp I                &kp O                    &kp P
-          &kp A           &kp S  &kp D                   &kp F             &kp G        &kp H                  &kp J  &kp K                &kp L                    &mt COLON SEMI
-&kp LGUI  &mt LEFT_ALT Z  &kp X  &kp C                   &kp V             &kp B        &kp N                  &kp M  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH  &mt DOUBLE_QUOTES SINGLE_QUOTE
-                                 &CapsWordShift LSHFT 0  &kp LEFT_CONTROL  &kp SPACE    &Thumb_LT 1 BACKSPACE  &mo 2  &kp RIGHT_ALT
+          &kp Q           &kp W  &kp E                   &kp R             &kp T        &kp Y                  &kp U        &kp I                &kp O                    &kp P
+          &kp A           &kp S  &kp D                   &kp F             &kp G        &kp H                  &kp J        &kp K                &kp L                    &mt COLON SEMI
+&kp LGUI  &mt LEFT_ALT Z  &kp X  &kp C                   &kp V             &kp B        &kp N                  &kp M        &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH  &mt DOUBLE_QUOTES SINGLE_QUOTE
+                                 &CapsWordShift LSHFT 0  &kp LEFT_CONTROL  &kp SPACE    &Thumb_LT 1 BACKSPACE  &num_lt 2 0  &kp RIGHT_ALT
             >;
         };
 
@@ -379,8 +380,8 @@
             display-name = "NUM";
             bindings = <
           &kp ESCAPE    &trans  &trans     &trans     &trans       &mt EQUAL KP_PLUS               &mt AMPERSAND NUMBER_7    &mt ASTRK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &mt TILDE GRAVE
-          &kp TAB       &trans  &trans     &trans     &trans       &mt UNDERSCORE KP_MINUS         &mt DOLLAR NUMBER_4       &mt PERCENT N5      &mt CARET NUMBER_6             &kp INTERNATIONAL_3
-&sk LGUI  &sk LEFT_ALT  &trans  &trans     &trans     &trans       &mt RIGHT_PARENTHESIS NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2     &mt HASH NUMBER_3              &mt PIPE BACKSLASH   &kp RIGHT_ALT
+          &kp TAB       &trans  &trans     &trans     &trans       &mt UNDERSCORE KP_MINUS         &mt DOLLAR NUMBER_4       &mt PERCENT N5      &mt CARET NUMBER_6             &kp COLON
+&sk LGUI  &sk LEFT_ALT  &trans  &trans     &trans     &trans       &mt RIGHT_PARENTHESIS NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2     &mt HASH NUMBER_3              &mt PIPE BACKSLASH  &kp RIGHT_ALT
                                 &sk LSHFT  &kp LCTRL  &kp SPACE    &trans                          &trans                    &trans
             >;
         };
