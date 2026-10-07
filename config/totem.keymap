@@ -381,7 +381,7 @@
             bindings = <
           &kp ESCAPE    &trans  &trans     &trans     &trans       &mt EQUAL KP_PLUS               &mt AMPERSAND NUMBER_7    &mt ASTRK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &mt TILDE GRAVE
           &kp TAB       &trans  &trans     &trans     &trans       &mt UNDERSCORE KP_MINUS         &mt DOLLAR NUMBER_4       &mt PERCENT N5      &mt CARET NUMBER_6             &kp COLON
-&sk LGUI  &sk LEFT_ALT  &trans  &trans     &trans     &trans       &mt RIGHT_PARENTHESIS NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2     &mt HASH NUMBER_3              &mt PIPE BACKSLASH  &kp RIGHT_ALT
+&sk LGUI  &sk LEFT_ALT  &trans  &trans     &trans     &trans       &mt RIGHT_PARENTHESIS NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2     &mt HASH NUMBER_3              &kp PERIOD       &mt PIPE BACKSLASH
                                 &sk LSHFT  &kp LCTRL  &kp SPACE    &trans                          &trans                    &trans
             >;
         };
