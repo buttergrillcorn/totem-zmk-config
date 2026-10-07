@@ -325,21 +325,6 @@
             flavor = "hold-preferred";
         };
 
-        num_word: num_word {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <BSPC DEL DOT COMMA MINUS EQUAL KP_PLUS KP_MINUS SLASH BSLH SEMI GRAVE>;
-            ignore-numbers;
-        };
-
-        num_lt: num_layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            bindings = <&mo>, <&num_word>;
-        };
     };
 
     keymap {
