@@ -341,6 +341,12 @@
             bindings = <&mo>, <&num_word>;
         };
 
+        nav_word: nav_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <LEFT DOWN UP RIGHT HOME END PG_UP PG_DN BSPC DEL>;
+            ignore-modifiers;
+        };
     };
 
     keymap {
