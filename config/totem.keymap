@@ -327,6 +327,29 @@
             quick-tap-ms = <0>;
             flavor = "hold-preferred";
         };
+
+        num_word: num_word {
+            compatible = "zmk,behavior-tri-state";
+            label = "NUM_WORD";
+            #binding-cells = <0>;
+            bindings = <&to 2>, <&none>, <&to 0>;
+            continue-list = <
+                NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 
+                NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0
+                KP_PLUS KP_MINUS KP_MULTIPLY KP_DIVIDE EQUAL
+                COMMA PERIOD SLASH COLON BACKSPACE DELETE
+            >;
+         };
+
+         num_lt: num_layer_tap {
+             compatible = "zmk,behavior-hold-tap";
+             label = "NUM_LT";
+             #binding-cells = <2>;
+             flavor = "balanced";
+             tapping-term-ms = <200>;
+             quick-tap-ms = <175>;
+             bindings = <&mo>, <&num_word>;
+         };
     };
 
     keymap {
