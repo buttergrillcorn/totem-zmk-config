@@ -345,11 +345,11 @@
         num_lt: num_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "NUM_LT";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            bindings = <&mo>, <&num_word>;
+            bindings = <&mo 2>, <&num_word>;
         };
     };
 
