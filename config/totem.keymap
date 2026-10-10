@@ -264,14 +264,6 @@
             timeout-ms = <50>;
             layers = <0 2>;
         };
-
-        Off {
-            bindings = <&soft_off>;
-            key-positions = <13 31>;
-            timeout-ms = <50>;
-            layers = <0>;
-            require-prior-idle-ms = <200>;
-        };
     };
 
     behaviors {
@@ -408,7 +400,7 @@
         Function {
             display-name = "FUNC";
             bindings = <
-          &kp ESCAPE    &trans  &trans     &trans     &to 4        &trans         &kp F7  &kp F8  &kp F9  &kp F10
+          &kp ESCAPE    &trans  &soft_off  &trans     &to 4        &trans         &kp F7  &kp F8  &kp F9  &kp F10
           &kp TAB       &trans  &trans     &trans     &trans       &kp LC(LS(S))  &kp F4  &kp F5  &kp F6  &kp F11
 &sk LGUI  &sk LEFT_ALT  &trans  &trans     &trans     &trans       &trans         &kp F1  &kp F2  &kp F3  &kp F12  &kp PRINTSCREEN
                                 &sk LSHFT  &kp LCTRL  &kp SPACE    &trans         &trans  &trans
