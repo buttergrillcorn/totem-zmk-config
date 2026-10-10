@@ -212,28 +212,28 @@
         MouseL {
             bindings = <&to 6>;
             key-positions = <12 11 13>;
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             layers = <0>;
         };
 
         MouseR {
             bindings = <&to 6>;
             key-positions = <17 18 16>;
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             layers = <0>;
         };
 
         MouseL_E {
             bindings = <&to 0>;
             key-positions = <11 12 13>;
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             layers = <6>;
         };
 
         MouseR_E {
             bindings = <&to 0>;
             key-positions = <18 17 16>;
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             layers = <6>;
         };
 
@@ -380,10 +380,10 @@
         Navigation {
             display-name = "NAV";
             bindings = <
-          &kp ESCAPE    &trans  &trans     &trans     &kp C_BRIGHTNESS_INC    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &kp K_MUTE
-          &kp TAB       &trans  &trans     &trans     &kp K_SLEEP             &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT   &kp PRINTSCREEN
-&sk LGUI  &sk LEFT_ALT  &trans  &trans     &trans     &kp C_BRIGHTNESS_DEC    &kp C_PREVIOUS  &kp C_VOL_DN   &kp C_VOL_UP  &kp C_NEXT  &kp C_PLAY_PAUSE  &kp RIGHT_ALT
-                                &sk LSHFT  &kp LCTRL  &kp SPACE               &trans          &trans         &trans
+          &kp ESCAPE    &trans  &trans     &trans     &kp C_BRIGHTNESS_INC    &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &kp K_MUTE
+          &kp TAB       &trans  &trans     &trans     &kp K_SLEEP             &kp LEFT           &kp DOWN       &kp UP_ARROW  &kp RIGHT   &kp PRINTSCREEN
+&sk LGUI  &sk LEFT_ALT  &trans  &trans     &trans     &kp C_BRIGHTNESS_DEC    &kp C_PREVIOUS     &kp C_VOL_DN   &kp C_VOL_UP  &kp C_NEXT  &kp C_PLAY_PAUSE  &kp RIGHT_ALT
+                                &sk LSHFT  &kp LCTRL  &kp SPACE               &kp LC(BACKSPACE)  &trans         &trans
             >;
         };
 
