@@ -381,7 +381,7 @@
             display-name = "NAV";
             bindings = <
           &trans  &trans    &trans     &trans     &kp C_BRIGHTNESS_INC    &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &kp K_MUTE
-          &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &kp K_SLEEP             &kp LEFT           &kp DOWN       &kp UP_ARROW  &kp RIGHT   &kp PRINTSCREEN
+          &trans  &sk LALT  &sk LSHFT  &sk LCTRL  &kp K_SLEEP             &kp LEFT           &kp DOWN       &kp UP_ARROW  &kp RIGHT   &kp PRINTSCREEN
 &sk LGUI  &trans  &trans    &trans     &trans     &kp C_BRIGHTNESS_DEC    &kp C_PREVIOUS     &kp C_VOL_DN   &kp C_VOL_UP  &kp C_NEXT  &kp C_PLAY_PAUSE  &kp RIGHT_ALT
                             &trans     &trans     &trans                  &kp LC(BACKSPACE)  &trans         &trans
             >;
@@ -391,7 +391,7 @@
             display-name = "NUM";
             bindings = <
           &trans  &trans    &trans     &trans     &trans    &mt EQUAL KP_PLUS               &mt AMPERSAND NUMBER_7    &mt ASTRK NUMBER_8  &mt LEFT_PARENTHESIS NUMBER_9  &mt TILDE GRAVE
-          &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &trans    &mt UNDERSCORE KP_MINUS         &mt DOLLAR NUMBER_4       &mt PERCENT N5      &mt CARET NUMBER_6             &kp COLON
+          &trans  &sk LALT  &sk LSHFT  &sk LCTRL  &trans    &mt UNDERSCORE KP_MINUS         &mt DOLLAR NUMBER_4       &mt PERCENT N5      &mt CARET NUMBER_6             &kp COLON
 &sk LGUI  &trans  &trans    &trans     &trans     &trans    &mt RIGHT_PARENTHESIS NUMBER_0  &mt EXCLAMATION NUMBER_1  &mt AT NUMBER_2     &mt HASH NUMBER_3              &kp PERIOD       &mt PIPE BACKSLASH
                             &trans     &trans     &trans    &trans                          &trans                    &trans
             >;
@@ -401,7 +401,7 @@
             display-name = "FUNC";
             bindings = <
           &trans  &trans    &soft_off  &trans     &to 4     &trans         &kp F7  &kp F8  &kp F9  &kp F10
-          &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &trans    &kp LC(LS(S))  &kp F4  &kp F5  &kp F6  &kp F11
+          &trans  &sk LALT  &sk LSHFT  &sk LCTRL  &trans    &kp LC(LS(S))  &kp F4  &kp F5  &kp F6  &kp F11
 &sk LGUI  &trans  &trans    &trans     &trans     &trans    &trans         &kp F1  &kp F2  &kp F3  &kp F12  &kp PRINTSCREEN
                             &trans     &trans     &trans    &trans         &trans  &trans
             >;
